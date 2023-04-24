@@ -2,8 +2,9 @@ import React from "react";
 
 function Header() {
   return (
-    <div>
-      <h1>Greatest Hits</h1>
+    <div className="header">
+      <h1>DayStart</h1>
+      <p>Starting your day your way.</p>
     </div>
   );
 }
