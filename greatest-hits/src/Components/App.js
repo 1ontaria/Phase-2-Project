@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import Header from "./Header";
+import MainContainer from "./MainContainer";
+
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <Header />
+      <MainContainer />
+    </div>
+  );
 }
 
 export default App;
