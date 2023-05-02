@@ -1,0 +1,36 @@
+body {
+  background: #ffdab9;
+  font-family: "Handlee", cursive;
+}
+
+.app-light {
+  background: #ffdab9;
+  color: #f08080;
+}
+
+.app-dark {
+  background: #f08080;
+  color: #ffdab9;
+}
+
+.card {
+  border: solid;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 20px;
+
+  height: 350px;
+}
+
+img {
+  width: 300px;
+  height: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  position: relative;
+}
