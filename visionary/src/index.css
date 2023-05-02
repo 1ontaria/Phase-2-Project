@@ -4,7 +4,7 @@ body {
 }
 
 .app-light {
-  background: #ffdab9;
+  background-color: #ffdab9;
   color: #f08080;
 }
 
@@ -31,6 +31,7 @@ ul {
   list-style-type: none;
 }
 
-button {
-  position: relative;
+.navlinks {
+  padding: 50px;
+  margin: 50px;
 }

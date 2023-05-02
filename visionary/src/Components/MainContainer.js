@@ -12,7 +12,6 @@ function MainContainer() {
 
   return (
     <div>
-      <h1>If you can see it, you can achieve it!</h1>
       <ul>
         {wishlist.map((item) => (
           <li key={item.id}>
