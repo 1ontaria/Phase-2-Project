@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MainContainer from "./MainContainer";
-import { Route } from "react-router-dom/cjs/react-router-dom.min";
+import { Route, Routes } from "react-router-dom";
 import WishlistForm from "./WishlistForm";
 import Header from "./Header";
 import Workouts from "./Workouts";
@@ -14,16 +14,15 @@ function App() {
 
   return (
     <div className={darkMode ? "app-light" : "app-dark"}>
-      <Header onSwitch={switchMode} darkMode={darkMode} />
-      <Route exact path="/">
-        <MainContainer />
-      </Route>
-      <Route path="/WishlistForm">
-        <WishlistForm />
-      </Route>
-      <Route path="/Workouts">
-        <Workouts />
-      </Route>
+      <div>
+        {" "}
+        <button onClick={switchMode}>{darkMode ? "Dark" : "Light"}</button>
+      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<MainContainer />}></Route>
+        <Route path="/new" element={<WishlistForm />} />
+      </Routes>
     </div>
   );
 }

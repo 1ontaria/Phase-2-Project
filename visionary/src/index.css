@@ -15,11 +15,11 @@ body {
 
 .card {
   border: solid;
+  border-radius: 10px;
   text-align: center;
-  width: 500px;
-  margin-bottom: 20px;
-
+  width: 400px;
   height: 350px;
+  box-sizing: border-box;
 }
 
 img {
@@ -32,6 +32,5 @@ ul {
 }
 
 .navlinks {
-  padding: 50px;
-  margin: 50px;
+  padding: 150px;
 }

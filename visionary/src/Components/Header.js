@@ -1,21 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 
-function Header({ darkMode, onSwitch }) {
+function Header() {
   return (
     <div>
-      <button onClick={onSwitch}>{darkMode ? " Dark" : "Light"}</button>
-      <div>
-        <NavLink className="navlinks" to="/" exact>
-          Home
-        </NavLink>
-        <NavLink className="navlinks" to="/WishlistForm">
-          Create New Goal
-        </NavLink>
-        <NavLink className="navlinks" to="/workouts">
-          Workout Ideas
-        </NavLink>
-      </div>
+      <Link to="/">Home</Link>
+      <Link to="/new">Create New Goal</Link>
+      <Link to="/test"> Test</Link>
     </div>
   );
 }

@@ -9,8 +9,9 @@ function VisionItem({ item }) {
 
       <form>
         Goal Achieved?: <br /> Yes{" "}
-        <input type="checkbox" name="manifested"></input>
-        <br /> No: <input type="checkbox" name="manifested"></input>
+        <input type="radio" name="manifested" value={item.isComplete}></input>
+        <br /> No:{" "}
+        <input type="radio" name="manifested" value={item.isComplete}></input>
       </form>
     </div>
   );
